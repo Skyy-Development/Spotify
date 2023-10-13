@@ -105,27 +105,27 @@ $(`
         <div id="debug-tab" class="tab-content hid">
             <div class="option">
                 <span>Current lyrics:</span>
-                <span id="debug-lyrics" class="b-area">Fetching...</span>
+                <span id="debug-lyrics" class="b-area">Warte auf daten...</span>
             </div>
             <div class="option">
                 <span>Last request took:</span>
-                <span id="debug-request" class="b-area">Fetching...</span>
+                <span id="debug-request" class="b-area">Warte auf daten...</span>
             </div>
             <div class="option">
                 <span>Last 2 requests average:</span>
-                <span id="debug-request-2" class="b-area">Fetching...</span>
+                <span id="debug-request-2" class="b-area">...</span>
             </div>
             <div class="option">
                 <span>Last 10 requests average:</span>
-                <span id="debug-request-10" class="b-area">Fetching...</span>
+                <span id="debug-request-10" class="b-area">Warte auf daten...</span>
             </div>
             <div class="option">
                 <span>Last 30 requests average::</span>
-                <span id="debug-request-30" class="b-area">Fetching...</span>
+                <span id="debug-request-30" class="b-area">Warte auf daten...</span>
             </div>
             <div class="option">
                 <span>Last playback update took:</span>
-                <span id="debug-playback" class="b-area">Fetching...</span>
+                <span id="debug-playback" class="b-area">Warte auf daten...</span>
             </div>
         </div>
     </div>
@@ -889,11 +889,11 @@ function updatePlaybackState() {
                 debugPlayback.html(`${Date.now() - start}ms`);
 
                 if(playbackState.trackId !== d.item.id) {
-                    debugLyrics.text("Fetching...");
-                    debugRequest.text("Fetching...");
-                    debugRequest2.text("Fetching...");
-                    debugRequest10.text("Fetching...");
-                    debugRequest30.text("Fetching...");
+                    debugLyrics.text("Warte auf daten...");
+                    debugRequest.text("Warte auf daten...");
+                    debugRequest2.text("Warte auf daten...");
+                    debugRequest10.text("Warte auf daten...");
+                    debugRequest30.text("Warte auf daten...");
 
                     playbackState.trackName = d.item.name;
                     playbackState.trackAuthor = d.item.artists[0].name;
@@ -1051,11 +1051,11 @@ if(settings.autorun) {
     setInterval(() => {
         if(startLog) {
             startLog = false;
-            debugLyrics.text("Fetching...");
-            debugRequest.text("Fetching...");
-            debugRequest2.text("Fetching...");
-            debugRequest10.text("Fetching...");
-            debugRequest30.text("Fetching...");
+            debugLyrics.text("Warte auf daten...");
+            debugRequest.text("Warte auf daten...");
+            debugRequest2.text("Warte auf daten...");
+            debugRequest10.text("Warte auf daten...");
+            debugRequest30.text("Warte auf daten...");
             addLog("Lyrics Status started...");
         }
         if(stopLog) {
