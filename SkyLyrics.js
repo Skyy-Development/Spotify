@@ -2,10 +2,10 @@
 // @name         Sky Lyrics Status V2
 // @namespace    -
 // @version      -
-// @description  Script for changing your status as lyrics of currently playing song!
+// @description  
 // @author       Sky-Development
 // @match        *://open.spotify.com/*
-// @icon         https://raw.githubusercontent.com/OvalQuilter/lyrics-status/main/Logo.png
+// @icon         
 // @grant        none
 // @require      https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js
 // ==/UserScript==
